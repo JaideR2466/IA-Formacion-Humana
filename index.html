@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realidad Virtual & Ingeniería Informática | Spatial Computing Era</title>
+  <meta name="description" content="Descubre el papel fundamental de la Ingeniería Informática en el desarrollo de la Realidad Virtual, Computación Espacial, Renderizado 3D e Inteligencia Artificial.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Three.js 3D Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <!-- 3D Canvas Background -->
+  <div id="canvas-container"></div>
+
+  <!-- Header / Navigation -->
+  <header>
+    <a href="#" class="logo">
+      <div class="logo-icon">🥽</div>
+      <span>VR & Informática</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#relacion">Ingeniería & VR</a></li>
+        <li><a href="#pilares">Pilares Técnicos</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#demo">Consola Interactiva</a></li>
+      </ul>
+    </nav>
+    <a href="#demo" class="nav-cta">Probar Backend</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="pulse"></span>
+          Ingeniería Informática & Computación Espacial
+        </div>
+        <h1>El Futuro de la <span class="gradient-text">Realidad Virtual</span> en tus Manos</h1>
+        <p>
+          La Realidad Virtual (VR) no es solo entretenimiento: es la confluencia más compleja de gráficos en tiempo real, arquitecturas de software multi-hilo, computación espacial e interacción humano-computador impulsada por la Ingeniería Informática.
+        </p>
+        <div class="hero-buttons">
+          <a href="#relacion" class="btn-primary">
+            <span>Explorar Relación</span>
+            <span>→</span>
+          </a>
+          <a href="#demo" class="btn-secondary">
+            <span>Simulador Telemetría</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-card-preview">
+        <h3 style="margin-bottom: 1.2rem; font-size: 1.1rem; color: var(--accent);">
+          ⚡ Telemetría del Visor VR en Tiempo Real
+        </h3>
+        <div class="telemetry-mini">
+          <div class="stat-box">
+            <div id="telemetry-fps" class="number">90 FPS</div>
+            <div class="label">Tasa de Refresco</div>
+          </div>
+          <div class="stat-box">
+            <div id="telemetry-latency" class="number">10.2 ms</div>
+            <div class="label">Latencia (M2P)</div>
+          </div>
+          <div class="stat-box">
+            <div id="telemetry-raycast" class="number">1,450K/s</div>
+            <div class="label">Cálculo de Rayos 3D</div>
+          </div>
+          <div class="stat-box">
+            <div class="number" style="color: #4ade80;">99.8%</div>
+            <div class="label">Estabilidad Espacial</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VR & Computer Engineering Relationship -->
+  <section id="relacion">
+    <div class="section-header">
+      <span class="section-tag">Conexión Profesional</span>
+      <h2 class="section-title">¿Cómo se conecta la VR con la Ingeniería Informática?</h2>
+      <p class="section-desc">
+        Un Ingeniero Informático es el arquitecto detrás de la física virtual, la optimización de latencia y la creación de experiencias inmersivas hiperrealistas.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div>
+          <div class="card-icon">🎨</div>
+          <h3>Computación Gráfica & Shaders</h3>
+          <p>
+            Desarrollo de algoritmos de renderizado esteroscópico, trazado de rayos (Ray Tracing) y programación de Shaders (HLSL/GLSL) para simular luz, sombras y materiales complejos en milisegundos.
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">OpenGL / WebGL</span>
+          <span class="card-tag">Vulkan</span>
+          <span class="card-tag">Shaders</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">⏱️</div>
+          <h3>Sistemas en Tiempo Real (RTS)</h3>
+          <p>
+            En VR, la latencia "Motion-to-Photon" debe ser inferior a 20ms para evitar el mareo por movimiento. Los ingenieros diseñan pipelines asíncronos y algoritmos de TimeWarp/SpaceWarp.
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">C++ / Rust</span>
+          <span class="card-tag">Concurrency</span>
+          <span class="card-tag">Low Latency</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🧠</div>
+          <h3>Inteligencia Artificial & Foveated Rendering</h3>
+          <p>
+            Integración de redes neuronales y visión por computadora para seguimiento ocular (Eye Tracking) y Foveated Rendering impulsado por IA, reduciendo la carga de renderizado hasta en un 60%.
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">Python AI</span>
+          <span class="card-tag">Computer Vision</span>
+          <span class="card-tag">PyTorch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Pillars Section -->
+  <section id="pilares">
+    <div class="section-header">
+      <span class="section-tag">Campos de Aplicación</span>
+      <h2 class="section-title">Especialidades de la Ingeniería en VR</h2>
+      <p class="section-desc">
+        La Realidad Virtual impulsa múltiples ramas de la informática hacia nuevos horizontes tecnológicos.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div>
+          <div class="card-icon">🎮</div>
+          <h3>Motores de Videojuegos & 3D</h3>
+          <p>
+            Arquitectura de software en Unreal Engine y Unity. Creación de motores gráficos propios utilizando estructuras de datos optimizadas como Octrees y Bounding Volume Hierarchies (BVH).
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">Unreal Engine</span>
+          <span class="card-tag">Unity C#</span>
+          <span class="card-tag">Spatial Math</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🤝</div>
+          <h3>Interacción Humano-Computador (HCI)</h3>
+          <p>
+            Diseño de interfaces 3D espaciales (Spatial UI), seguimiento de manos sin controladores (Hand Tracking) y retroalimentación háptica avanzada para entornos quirúrgicos e industriales.
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">Spatial UI</span>
+          <span class="card-tag">Haptics</span>
+          <span class="card-tag">UX 3D</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div>
+          <div class="card-icon">🌐</div>
+          <h3>WebXR & Metaviento Distribuidos</h3>
+          <p>
+            Creación de experiencias inmersivas directamente en la web a través del estándar WebXR API, conectando mundos virtuales multi-usuario en tiempo real mediante WebSockets y WebRTC.
+          </p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag">WebXR API</span>
+          <span class="card-tag">Three.js</span>
+          <span class="card-tag">WebSockets</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Matrix Section -->
+  <section id="tecnologias">
+    <div class="section-header">
+      <span class="section-tag">Ecosistema Tecnológico</span>
+      <h2 class="section-title">Tecnologías Utilizadas en este Proyecto</h2>
+      <p class="section-desc">
+        Integración políglota combinando la potencia de Python, la expresividad de Java y el estándar Web de HTML5/JS.
+      </p>
+    </div>
+
+    <div class="tech-matrix">
+      <div class="tech-box">
+        <div class="tech-logo">🌐</div>
+        <h4>HTML5 & WebGL</h4>
+        <p>Estructura de la interfaz moderna y renderizado 3D interactivo en vivo con Three.js.</p>
+      </div>
+
+      <div class="tech-box">
+        <div class="tech-logo">🐍</div>
+        <h4>Python Flask API</h4>
+        <p>Servicio backend para analítica de telemetría de rendimiento y procesamiento de datos VR.</p>
+      </div>
+
+      <div class="tech-box">
+        <div class="tech-logo">☕</div>
+        <h4>Java Engine Sim</h4>
+        <p>Motor concurrente de simulación de transformaciones de matrices 3D y física espacial.</p>
+      </div>
+
+      <div class="tech-box">
+        <div class="tech-logo">📖</div>
+        <h4>README Técnico</h4>
+        <p>Documentación académica completa de la relación VR - Ingeniería Informática.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Terminal & Interactive Console -->
+  <section id="demo">
+    <div class="section-header">
+      <span class="section-tag">Demostración en Vivo</span>
+      <h2 class="section-title">Consola de Control & Código Backend</h2>
+      <p class="section-desc">
+        Prueba la interacción con los servicios de Python y Java creados en esta arquitectura.
+      </p>
+    </div>
+
+    <div class="demo-container">
+      <!-- Terminal Window -->
+      <div class="code-terminal">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <div class="terminal-title">
+            <span id="tab-python" class="terminal-tab active" style="cursor:pointer; margin-right:15px;">🐍 app.py (Python)</span>
+            <span id="tab-java" class="terminal-tab" style="cursor:pointer;">☕ VRPhysicsEngine.java (Java)</span>
+          </div>
+        </div>
+        <div id="terminal-code-output" class="terminal-body"><span class="comment"># Python Flask API - Telemetría y Análisis de Visores VR</span>
+<span class="keyword">from</span> flask <span class="keyword">import</span> Flask, jsonify
+<span class="keyword">import</span> random
+
+app = Flask(__name__)
+
+<span class="keyword">@app.route</span>(<span class="string">'/api/vr/telemetry'</span>, methods=[<span class="string">'GET'</span>])
+<span class="keyword">def</span> <span class="func">get_telemetry</span>():
+    <span class="keyword">return</span> jsonify({
+        <span class="string">"fps"</span>: random.randint(88, 92),
+        <span class="string">"motion_to_photon_ms"</span>: round(random.uniform(9.1, 11.4), 2),
+        <span class="string">"foveated_rendering"</span>: <span class="keyword">True</span>
+    })
+
+<span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:
+    app.run(port=5000)</div>
+      </div>
+
+      <!-- Controls & Status -->
+      <div class="live-controls">
+        <div>
+          <h3 style="font-size: 1.3rem; margin-bottom: 1rem;">Parámetros del Simulador VR</h3>
+          <div class="control-panel">
+            <div class="control-group">
+              <label>
+                <span>Resolución por Ojo</span>
+                <span id="resolution-val" style="color: var(--accent);">1920x1080 per eye</span>
+              </label>
+              <input type="range" id="resolution-slider" min="1080" max="2160" step="120" value="1920">
+            </div>
+
+            <div class="control-group">
+              <label>
+                <span>Campo de Visión (FOV)</span>
+                <span id="fov-val" style="color: var(--secondary);">110° FOV</span>
+              </label>
+              <input type="range" id="fov-slider" min="90" max="130" step="5" value="110">
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+          <div style="display: flex; gap: 0.8rem; margin-bottom: 1rem;">
+            <button id="btn-test-python" class="btn-primary" style="padding: 0.7rem 1.2rem; font-size: 0.9rem;">
+              🐍 Test Python API
+            </button>
+            <button id="btn-test-java" class="btn-secondary" style="padding: 0.7rem 1.2rem; font-size: 0.9rem;">
+              ☕ Bench Java Engine
+            </button>
+          </div>
+
+          <div id="backend-status" style="background: rgba(255,255,255,0.03); border: 1px dashed var(--border-glow); padding: 1rem; border-radius: 12px; font-size: 0.9rem; color: var(--text-muted);">
+            💡 Haz clic en los botones para probar la simulación de servicios backend en vivo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="logo">
+        <div class="logo-icon">🥽</div>
+        <span>Realidad Virtual & Ingeniería Informática</span>
+      </div>
+      <p class="footer-text">
+        Desarrollado como proyecto integrador que une HTML/CSS/JS, Python y Java para explorar la frontera de la Computación Espacial.
+      </p>
+      <div class="footer-credits">
+        © 2026 - Proyecto de Formación Humana e Ingeniería Informática.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application JS -->
+  <script src="js/app.js"></script>
+  <script src="js/vr-canvas.js"></script>
+
+</body>
+</html>
